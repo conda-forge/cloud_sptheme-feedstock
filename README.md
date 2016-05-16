@@ -69,9 +69,10 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/cloud_sptheme-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/cloud_sptheme-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/cloud_sptheme-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/cloud_sptheme-feedstock) 
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/cloud_sptheme-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/cloud_sptheme-feedstock/branch/master)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/cloud-sptheme-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/cloud-sptheme-feedstock/branch/master)
 
 Current release info
 ====================
