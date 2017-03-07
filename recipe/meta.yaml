@@ -31,6 +31,7 @@ test:
 about:
   home: https://bitbucket.org/ecollins/cloud_sptheme
   license: BSD 3-Clause
+  license_file: LICENSE
   summary: A nice sphinx theme named 'Cloud', and some related extensions.
 
 extra:
