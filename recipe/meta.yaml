@@ -18,7 +18,6 @@ requirements:
   build:
     - python
     - setuptools
-    - sphinx >=1.2
 
   run:
     - python
