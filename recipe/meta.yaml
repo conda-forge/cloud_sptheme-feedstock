@@ -7,7 +7,7 @@ package:
 source:
   fn: cloud_sptheme-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/c/cloud_sptheme/cloud_sptheme-{{ version }}.tar.gz
-  md5: 20a8725a72481a76432e3e1c3e8151a5
+  sha256: 7ea3b2da3dd4c12c8a1f859327d1bb5decae9aaa358a1a1cb2f4b772c955a97e
 
 build:
   number: 0
