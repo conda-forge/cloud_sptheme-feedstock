@@ -1,4 +1,4 @@
-{% set version = "1.8.3" %}
+{% set version = "1.9.4" %}
 
 package:
   name: cloud_sptheme
@@ -7,7 +7,7 @@ package:
 source:
   fn: cloud_sptheme-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/c/cloud_sptheme/cloud_sptheme-{{ version }}.tar.gz
-  sha256: 60f03e89117bd8271d97321176d48001b9a640f611f54f22ad1d23824e335413
+  sha256: 4d665f2f4681140abf8d45b846371d54918207fc397b403f1fa307e8f3394b6c
 
 build:
   number: 0
