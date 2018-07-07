@@ -10,12 +10,14 @@ source:
   sha256: 4d665f2f4681140abf8d45b846371d54918207fc397b403f1fa307e8f3394b6c
 
 build:
-  number: 0
+  noarch: python
+  number: 1
   preserve_egg_dir: True
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-  build:
+  host:
+    - pip
     - python
     - setuptools
 
