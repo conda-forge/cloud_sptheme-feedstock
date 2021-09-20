@@ -1,4 +1,4 @@
-{% set version = "1.10.0" %}
+{% set version = "1.10.1.post20200504175005" %}
 
 package:
   name: cloud_sptheme
@@ -7,22 +7,25 @@ package:
 source:
   fn: cloud_sptheme-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/c/cloud_sptheme/cloud_sptheme-{{ version }}.tar.gz
-  sha256: e55448c14087a7fcbba7d58d6d9edf12190b73ea9c1ca68562ca75aeabbe484a
+  sha256: caf47ac4c6346eef47fc11e799adbeaf645921c712cc099cf2530560e7ecde44
+  patches:
+    - 0001-patch-sphinx-4-support.patch
 
 build:
   noarch: python
-  number: 0
-  preserve_egg_dir: True
+  number: 1
+  preserve_egg_dir: true
   script: {{ PYTHON }} -m pip install . -vv
+
 
 requirements:
   host:
     - pip
-    - python
+    - python >=2.7
     - setuptools
 
   run:
-    - python
+    - python >=2.7
     - sphinx >=1.6
 
 test:
@@ -31,8 +34,8 @@ test:
     - cloud_sptheme.ext
 
 about:
-  home: https://bitbucket.org/ecollins/cloud_sptheme
-  license: BSD 3-Clause
+  home: https://cloud-sptheme.readthedocs.io/en/latest/
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: A nice sphinx theme named 'Cloud', and some related extensions.
 
