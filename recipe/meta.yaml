@@ -21,11 +21,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python
     - setuptools
 
   run:
-    - python >=3.6
+    - python
     - sphinx >=1.6
 
 test:
