@@ -10,6 +10,7 @@ source:
   sha256: caf47ac4c6346eef47fc11e799adbeaf645921c712cc099cf2530560e7ecde44
   patches:
     - 0001-patch-sphinx-4-support.patch
+    - 0002-patch-jinja-markup-deprecation.patch
 
 build:
   noarch: python
@@ -27,6 +28,8 @@ requirements:
   run:
     - python >=2.7
     - sphinx >=1.6
+    - markupsafe
+    - jinja2
 
 test:
   imports:
