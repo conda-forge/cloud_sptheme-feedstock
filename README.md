@@ -1,11 +1,11 @@
-About cloud_sptheme
-===================
+About cloud_sptheme-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cloud_sptheme-feedstock/blob/main/LICENSE.txt)
 
 Home: https://cloud-sptheme.readthedocs.io/en/latest/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cloud_sptheme-feedstock/blob/main/LICENSE.txt)
 
 Summary: A nice sphinx theme named 'Cloud', and some related extensions.
 
