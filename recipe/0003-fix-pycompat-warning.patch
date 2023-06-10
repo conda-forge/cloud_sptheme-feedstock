@@ -1,0 +1,28 @@
+From 6156f473323fa96170af6adfb159f33882c1d1e0 Mon Sep 17 00:00:00 2001
+From: Morten Lund <melund@gmail.com>
+Date: Wed, 31 May 2023 14:39:17 +0200
+Subject: [PATCH 1/2] fix pycompat warning
+
+---
+ cloud_sptheme/ext/auto_redirect.py | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+diff --git a/cloud_sptheme/ext/auto_redirect.py b/cloud_sptheme/ext/auto_redirect.py
+index c8459df..4932f06 100644
+--- a/cloud_sptheme/ext/auto_redirect.py
++++ b/cloud_sptheme/ext/auto_redirect.py
+@@ -55,7 +55,10 @@ import os
+ # site
+ from docutils.nodes import raw
+ from sphinx.builders.html import StandaloneHTMLBuilder
+-from sphinx.util.pycompat import htmlescape
++try:
++    from sphinx.util.pycompat import htmlescape
++except ImportError:
++    from html import escape as htmlescape
+ # pkg
+ from cloud_sptheme import __version__, _root_dir, is_cloud_theme
+ from cloud_sptheme.utils import add_static_file
+-- 
+2.40.1.vfs.0.0
+
