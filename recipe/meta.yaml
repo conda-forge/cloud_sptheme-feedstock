@@ -11,10 +11,12 @@ source:
   patches:
     - 0001-patch-sphinx-4-support.patch
     - 0002-patch-jinja-markup-deprecation.patch
+    - 0003-fix-pycompat-warning.patch
+    - 0004-fix-docutils-0.17-issues-with-toggle-html.patch
 
 build:
   noarch: python
-  number: 2
+  number: 3
   preserve_egg_dir: true
   script: {{ PYTHON }} -m pip install . -vv
 
