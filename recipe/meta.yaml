@@ -6,7 +6,7 @@ package:
 
 source:
   fn: cloud_sptheme-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/c/cloud_sptheme/cloud_sptheme-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/c/cloud_sptheme/cloud_sptheme-{{ version }}.tar.gz
   sha256: caf47ac4c6346eef47fc11e799adbeaf645921c712cc099cf2530560e7ecde44
   patches:
     - 0001-patch-sphinx-4-support.patch
@@ -16,7 +16,7 @@ source:
 
 build:
   noarch: python
-  number: 3
+  number: 4
   preserve_egg_dir: true
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -24,16 +24,18 @@ build:
 requirements:
   host:
     - pip
-    - python >=2.7
+    - python {{ python_min }}
     - setuptools
 
   run:
-    - python >=2.7
+    - python >={{ python_min }}
     - sphinx >=1.6
     - markupsafe
     - jinja2
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - cloud_sptheme
     - cloud_sptheme.ext
